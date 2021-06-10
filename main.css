@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bk-im {
+    padding: 20px;
+    color: rgb(245, 237, 237);
+    margin: 5px auto;
+    text-align: center;
+}
+.bk-im > div {
+ margin: 10px;   
+}
+
+.img-container {
+    width: 320px;
+    height: 320px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo { 
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+}
+
+.box-1 button {
+    border-radius: 40px;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.box-1 p{
+    margin: 10px auto;
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        background-image: url(bg-desktop.svg);
+    }
+
+    .bk-im {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 40px;
+    }
+    .bk-im > div {
+     flex: 1; 
+     margin: 0 15px;   
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .bk-im {
+        /* padding: 80px; */
+    }
+    
+    .img-container {
+        width: 600px;
+        height: 420px;
+    }
+}
